@@ -32,8 +32,8 @@ JsonObject getSubscribedUsers()
   JsonObject users;
 
   // no file
-   if (!subscribedUsersFile) 
-   {
+  if (!subscribedUsersFile)
+  {
     Serial.println("Failed to open subscribed users file");
     // Create empty file (w+ not working as expected)
     File f = LittleFS.open(SUBSCRIBED_USERS_FILENAME, "w");
